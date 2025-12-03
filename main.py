@@ -36,7 +36,4 @@ def main():
                 print("Elegí bien tarado")
         except ValueError:
             print("Pone números boludo")
-
-        
-
 main()
