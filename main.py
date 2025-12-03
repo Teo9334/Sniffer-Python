@@ -21,20 +21,22 @@ def main():
         \033[0m""")
         try:
             op = int(input("Opción >> "))
-        except ValueError:
-            print("Son números boludo")
 
-        if op == 1:
-            ScanRed()
-        elif op == 2:
-            print("Nada")
-        elif op == 3:
-            Banner()
-        elif op == 4:
-            print("[\033[31m!\033[0m] Saliendo...")
-            time.sleep(1)
-            done = False
-        else:
-            print("Elegí bien tarado")
+            if op == 1:
+                ScanRed()
+            elif op == 2:
+                print("Nada")
+            elif op == 3:
+                Banner()
+            elif op == 4:
+                print("[\033[31m!\033[0m] Saliendo...")
+                time.sleep(1)
+                done = False
+            else:
+                print("Elegí bien tarado")
+        except ValueError:
+            print("Pone números boludo")
+
+        
 
 main()
