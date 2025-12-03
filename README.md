@@ -5,4 +5,4 @@
  * tabulate    0.9.0
 
 ## Te recomiendo usar
-python -m myvenv [Nombre del entorno]
+python -m venv [Nombre del entorno]
