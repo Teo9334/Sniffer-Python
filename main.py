@@ -17,9 +17,12 @@ def main():
         (1) Scan (NMAP)
         (2) Sniff
         (3) Banner
-        (4) EXIT
-    \033[0m""")
-        op = int(input("Opción >> "))
+        (4) EXIT 
+        \033[0m""")
+        try:
+            op = int(input("Opción >> "))
+        except ValueError:
+            print("Son números boludo")
 
         if op == 1:
             ScanRed()
@@ -31,5 +34,7 @@ def main():
             print("[\033[31m!\033[0m] Saliendo...")
             time.sleep(1)
             done = False
+        else:
+            print("Elegí bien tarado")
 
 main()
